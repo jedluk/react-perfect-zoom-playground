@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PerfectZoom from '../../react-perfect-zoom/src';
+import sample from './assets/sample.jpg';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        {/* <PerfectZoom source={sample} size={[300, 500]} /> */}
       </header>
     </div>
   );
