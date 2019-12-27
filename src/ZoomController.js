@@ -31,6 +31,9 @@ const PerfectZoomController = ({ zoomState, setZoomState }) => {
   function setPlacement(e) {
     setZoomState({ ...zoomState, placement: e.target.value });
   }
+  function setMargin(value) {
+    setZoomState({ ...zoomState, margin: zoomState.margin + value });
+  }
   return (
     <div style={{ position: 'fixed', top: 10, left: 20 }}>
       <h2>Perfect zoom controller</h2>
@@ -46,6 +49,10 @@ const PerfectZoomController = ({ zoomState, setZoomState }) => {
       <button onClick={() => setBorderSize(-1)}>-</button>
       <button onClick={() => setBorderSize(+1)}>+</button>
       <br />
+      <h4 className="inline-block">Margin: {zoomState.margin}&nbsp;</h4>
+      <button onClick={() => setMargin(-2)}>-</button>
+      <button onClick={() => setMargin(+2)}>+</button>
+      <br />
       <h4 className="inline-block">Placement: &nbsp;</h4>
       <select value={zoomState.placement} onChange={setPlacement}>
         <option value="top">top</option>
@@ -56,7 +63,7 @@ const PerfectZoomController = ({ zoomState, setZoomState }) => {
       <br />
       <br />
       <h4 className="inline-block" style={{ color: zoomState.color }}>
-        Current color: {zoomState.color}
+        Rectangle border: {zoomState.color}
         &nbsp;
         <input type="color" value={zoomState.rectangleStyles.color} onChange={setColor} />
       </h4>
