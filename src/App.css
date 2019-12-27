@@ -29,6 +29,28 @@
   color: #61dafb;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.flex-button {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.flex-area {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+}
+
+h4 {
+  margin: 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

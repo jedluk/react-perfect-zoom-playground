@@ -1,73 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
+import PerfectZoomController from './ZoomController';
+import FlexController from './FlexController';
 import logo from './logo.svg';
 import './App.css';
 import PerfectZoom from '../../react-perfect-zoom/src';
 import Paragraph from './Paragraph';
 import sample from './assets/sample2.jpg';
 
-const PLACEMENT_LEFT = true;
-
 function App() {
-  const [translateX, addX] = useState(0);
-  const [translateY, addY] = useState(0);
-  const [color, setColor] = useState('#eca303');
-  const [size, setSize] = useState(1);
-  const [placement, setPlacement] = useState('right');
+  const [zoomState, setZoomState] = useState({
+    placement: 'right',
+    rectangleStyles: {
+      color: '#61dafb',
+      size: 2
+    },
+    translate: {
+      x: 0,
+      y: 0
+    }
+  });
+  const [flexDirection, setFlexDirection] = useState('random');
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <div style={{ position: 'fixed', top: 10, left: 20 }}>
-        <button onClick={() => addX(translateX - 50)}>-</button>
-        {'translateX: ' + translateX + ' '}
-        <button onClick={() => addX(translateX + 50)}>+</button>
-        <br />
-        <br />
-        <button onClick={() => addY(translateY - 50)}>-</button>
-        {'translateY:' + translateY + ' '}
-        <button onClick={() => addY(translateY + 50)}>+</button>
-        <br />
-        <br />
-        <input type="color" value={color} onChange={e => setColor(e.target.value)} />
-        &nbsp;
-        <span style={{ color }}> Current color: {color}</span>
-        <br />
-        <br />
-        <button onClick={() => setSize(size - 1)}>-</button>
-        {' border size: ' + size + ' '}
-        <button onClick={() => setSize(size + 1)}>+</button>
-        <br />
-        <br />
-        Placement: &nbsp;
-        <select value={placement} onChange={e => setPlacement(e.target.value)}>
-          <option value="top">top</option>
-          <option value="right">right</option>
-          <option value="bottom">bottom</option>
-          <option value="left">left</option>
-        </select>
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row-reverse',
-          [PLACEMENT_LEFT ? 'marginLeft' : 'marginRight']: 20,
-          margin: 20
-        }}
-      >
+      <PerfectZoomController zoomState={zoomState} setZoomState={setZoomState} />
+      <div className="flex-area" style={{ flexDirection }}>
+        {'random' === flexDirection && (
+          <Fragment>
+            <Paragraph />
+            <Paragraph />
+          </Fragment>
+        )}
         <PerfectZoom
-          placement={placement}
+          placement={zoomState.placement}
           source={sample}
           thumbnailSize={[300, 500]}
-          rectangleStyles={{ color, size }}
-          translate={{
-            x: translateX,
-            y: translateY
-          }}
+          rectangleStyles={zoomState.rectangleStyles}
+          translate={zoomState.translate}
         />
         <Paragraph />
         <Paragraph />
-        <Paragraph />
+        <FlexController flexDirection={flexDirection} setFlexDirection={setFlexDirection} />
       </div>
       <Paragraph />
       <Paragraph />
