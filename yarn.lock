@@ -254,7 +254,7 @@
     "@babel/helper-remap-async-to-generator" "^7.7.4"
     "@babel/plugin-syntax-async-generators" "^7.7.4"
 
-"@babel/plugin-proposal-class-properties@7.7.4":
+"@babel/plugin-proposal-class-properties@7.7.4", "@babel/plugin-proposal-class-properties@^7.7.4":
   version "7.7.4"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.7.4.tgz#2f964f0cb18b948450362742e33e15211e77c2ba"
   integrity sha512-EcuXeV4Hv1X3+Q1TsuOmyyxeTRiSqurGJ26+I/FW1WbymmRRapVORm6x1Zl3iDIHyRxEs+VXWp6qnlcfcJSbbw==
@@ -3193,6 +3193,13 @@ csstype@^2.2.0:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.8.tgz#0fb6fc2417ffd2816a418c9336da74d7f07db431"
   integrity sha512-msVS9qTuMT5zwAGCVm4mxfrZ18BNc6Csd0oJAtiFMZ1FAx1CCvy2+5MDmYoix63LM/6NDbNtodCiGYGmFgO0dA==
 
+customize-cra@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/customize-cra/-/customize-cra-0.9.1.tgz#76b42c4f537c16329eccc09cfefd804d04c81550"
+  integrity sha512-LISruJ6ak6u+HVQ2vPI+HE4inpPugB73KB9YIpE2J1TW5L1Vrjzm3l2Yupyy+1alJGwAd5GAb5Hfc9qmSUuHow==
+  dependencies:
+    lodash.flow "^3.5.0"
+
 cyclist@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
@@ -5809,6 +5816,11 @@ jest@24.9.0:
     import-local "^2.0.0"
     jest-cli "^24.9.0"
 
+js-image-zoom@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/js-image-zoom/-/js-image-zoom-0.7.0.tgz#9cea6e7a4da1feae99e7433dc58fdc31f05a977f"
+  integrity sha512-csvn2FmRLjVz5O9AtXGRPKy0Khfcf5n2Vuyg1NyOVylcjzJ6IKN60JmZ/d5rVQvMya9V6tqAaCqj/c20PlUYpQ==
+
 js-levenshtein@^1.1.3:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/js-levenshtein/-/js-levenshtein-1.1.6.tgz#c6cee58eb3550372df8deb85fad5ce66ce01d59d"
@@ -6150,6 +6162,11 @@ lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
+
+lodash.flow@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.flow/-/lodash.flow-3.5.0.tgz#87bf40292b8cf83e4e8ce1a3ae4209e20071675a"
+  integrity sha1-h79AKSuM+D5OjOGjrkIJ4gBxZ1o=
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -8321,6 +8338,13 @@ react-app-polyfill@^1.0.5:
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
 
+react-app-rewired@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/react-app-rewired/-/react-app-rewired-2.1.5.tgz#592ec2eae5c3c5cd96c80930b5dc3f6c34da1dc6"
+  integrity sha512-Gr8KfCeL9/PTQs8Vvxc7v8wQ9vCFMnYPhcAkrMlzkLiMFXS+BgSwm11MoERjZm7dpA2WjTi+Pvbu/w7rujAV+A==
+  dependencies:
+    semver "^5.6.0"
+
 react-dev-utils@^10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-10.0.0.tgz#bd2d16426c7e4cbfed1b46fb9e2ac98ec06fcdfa"
@@ -8366,12 +8390,32 @@ react-error-overlay@^6.0.4:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.4.tgz#0d165d6d27488e660bc08e57bdabaad741366f7a"
   integrity sha512-ueZzLmHltszTshDMwyfELDq8zOA803wQ1ZuzCccXa1m57k1PxSHfflPD5W9YIiTXLs0JTLzoj6o1LuM5N6zzNA==
 
+react-image-zoom@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-image-zoom/-/react-image-zoom-1.1.0.tgz#1d66e124b153e7cafe4d428ac49a254319a1f8f7"
+  integrity sha512-6Xz+hnPnDoafwod8PdqT3wWlGbiCQi6nf9kqQMirgSFiuyOZ3yjwiGZDsFxvU/pGJSHZgRhxuoHdYyiJkEiLPA==
+  dependencies:
+    js-image-zoom "^0.7.0"
+    prop-types "^15.7.2"
+
 react-is@^16.8.1, react-is@^16.8.4:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
-react-scripts@3.3.0:
+react-perfect-zoom@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-perfect-zoom/-/react-perfect-zoom-0.1.0.tgz#10216db3b57c430b5d43213885444076a406b913"
+  integrity sha512-fHVGAs/BEZyukKWBZ//fu1soi8+9UuAbOGhCLLz4hR9w38QNTPxXunmMWsCoixN+a6oJ3+jBEYXkuIu00U0xVA==
+  dependencies:
+    "@testing-library/jest-dom" "^4.2.4"
+    "@testing-library/react" "^9.3.2"
+    "@testing-library/user-event" "^7.1.2"
+    react "^16.12.0"
+    react-dom "^16.12.0"
+    react-scripts "3.3.0"
+
+react-scripts@3.3.0, react-scripts@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.3.0.tgz#f26a21f208f20bd04770f43e50b5bbc151920c2a"
   integrity sha512-hzPc6bxCc9GnsspWqk494c2Gpd0dRbk/C8q76BNQIENi9GMwoxFljOEcZoZcpFpJgQ45alxFR6QaLt+51qie7g==
