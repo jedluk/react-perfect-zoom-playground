@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-perfect-zoom-playground/precache-manifest.f123531649df514a6c1d996b8b40cabb.js"
+  "/react-perfect-zoom-playground/precache-manifest.c36a8a03e11f083e64c55e17354be479.js"
 );
 
 self.addEventListener('message', (event) => {
