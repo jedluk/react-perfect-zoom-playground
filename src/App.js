@@ -9,7 +9,7 @@ import sample from './assets/sample2.jpg';
 
 function App() {
   const [zoomState, setZoomState] = useState({
-    placement: 'left',
+    placement: 'right',
     rectangleStyles: {
       color: '#61dafb',
       size: 2
@@ -20,7 +20,7 @@ function App() {
     },
     margin: 20
   });
-  const [flexDirection, setFlexDirection] = useState('row-reverse');
+  const [flexDirection, setFlexDirection] = useState('row');
   return (
     <div className="App">
       <header className="App-header">
@@ -49,6 +49,12 @@ function App() {
       <Paragraph />
       <Paragraph />
       <Paragraph />
+      <Paragraph />
+      {/* <Paragraph />
+      <Paragraph /> */}
+      {/* <div style={{ minWidth: '120%' }}>
+        <Paragraph />
+      </div> */}
     </div>
   );
 }
