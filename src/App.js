@@ -1,11 +1,7 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import PerfectZoomController from './ZoomController';
-import FlexController from './FlexController';
-import logo from './logo.svg';
-import './App.css';
-import PerfectZoom from 'react-perfect-zoom';
-import Paragraph from './Paragraph';
-import sample from './assets/sample2.jpg';
+import Media from 'react-media';
+import Page from './Page';
 
 function App() {
   const [zoomState, setZoomState] = useState({
@@ -20,41 +16,18 @@ function App() {
     },
     margin: 20
   });
-  const [flexDirection, setFlexDirection] = useState('row');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
       <PerfectZoomController zoomState={zoomState} setZoomState={setZoomState} />
-      <div className="flex-area" style={{ flexDirection }}>
-        {'random' === flexDirection && (
-          <Fragment>
-            <Paragraph />
-            <Paragraph />
-          </Fragment>
-        )}
-        <PerfectZoom
-          placement={zoomState.placement}
-          source={sample}
-          thumbnailSize={[300, 500]}
-          rectangleStyles={zoomState.rectangleStyles}
-          margin={zoomState.margin}
-          translate={zoomState.translate}
-        />
-        <Paragraph />
-        <Paragraph />
-        <FlexController flexDirection={flexDirection} setFlexDirection={setFlexDirection} />
-      </div>
-      <Paragraph />
-      <Paragraph />
-      <Paragraph />
-      <Paragraph />
-      {/* <Paragraph />
-      <Paragraph /> */}
-      {/* <div style={{ minWidth: '120%' }}>
-        <Paragraph />
-      </div> */}
+      <Media
+        queries={{
+          small: '(max-width: 859px)',
+          medium: '(min-width: 860px) and (max-width: 1199px)',
+          large: '(min-width: 1200px)'
+        }}
+      >
+        {match => <Page match={match} perfectZoomState={zoomState} />}
+      </Media>
     </div>
   );
 }
