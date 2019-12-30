@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import FlexController from './FlexController';
-import PerfectZoom from '../../react-perfect-zoom/src';
+import PerfectZoom from 'react-perfect-zoom';
 import Paragraph from './Paragraph';
 import sample from './assets/sample2.jpg';
 
