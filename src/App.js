@@ -5,7 +5,7 @@ import Page from './Page';
 
 function App() {
   const [zoomState, setZoomState] = useState({
-    placement: 'right',
+    placement: '',
     rectangleStyles: {
       color: '#61dafb',
       size: 2

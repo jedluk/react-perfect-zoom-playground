@@ -11,7 +11,7 @@ const Page = ({ match, perfectZoomState: { placement, rectangleStyles, margin, t
       <div className="flex-area" style={{ ...(!match.small && { flexDirection }) }}>
         {('center' === flexDirection || match.small) && <Paragraph />}
         <PerfectZoom
-          placement={placement}
+          placement={placement || match.small ? 'top' : 'right'}
           source={sample}
           thumbnailSize={match.small ? [150, 250] : match.medium ? [200, 333] : [300, 500]}
           rectangleStyles={rectangleStyles}
