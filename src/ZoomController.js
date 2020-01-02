@@ -70,7 +70,7 @@ const PerfectZoomController = ({ zoomState, setZoomState }) => {
           <input type="color" value={zoomState.rectangleStyles.color} onChange={setColor} />
         </h4>
       </div>
-      <div className="App-header">
+      <div className="header-logo">
         <img src={logo} className="App-logo" alt="logo" />
       </div>
     </div>
