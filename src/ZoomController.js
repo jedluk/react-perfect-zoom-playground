@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 
-const PerfectZoomController = ({ zoomState, setZoomState }) => {
+const PerfectZoomController = ({ match, zoomState, setZoomState }) => {
   function setTranslate(coordinate, value) {
     setZoomState({
       ...zoomState,
@@ -56,7 +56,10 @@ const PerfectZoomController = ({ zoomState, setZoomState }) => {
         <button onClick={() => setMargin(+2)}>+</button>
         <br />
         <h4 className="inline-block">Placement: &nbsp;</h4>
-        <select value={zoomState.placement} onChange={setPlacement}>
+        <select
+          value={zoomState.placement || match.small ? 'top' : 'right'}
+          onChange={setPlacement}
+        >
           <option value="top">top</option>
           <option value="right">right</option>
           <option value="bottom">bottom</option>

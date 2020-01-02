@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import PerfectZoomController from './ZoomController';
 import Media from 'react-media';
 import Page from './Page';
@@ -18,7 +18,6 @@ function App() {
   });
   return (
     <div className="App">
-      <PerfectZoomController zoomState={zoomState} setZoomState={setZoomState} />
       <Media
         queries={{
           small: '(max-width: 859px)',
@@ -26,7 +25,16 @@ function App() {
           large: '(min-width: 1200px)'
         }}
       >
-        {match => <Page match={match} perfectZoomState={zoomState} />}
+        {match => (
+          <Fragment>
+            <PerfectZoomController
+              match={match}
+              zoomState={zoomState}
+              setZoomState={setZoomState}
+            />
+            <Page match={match} perfectZoomState={zoomState} />
+          </Fragment>
+        )}
       </Media>
     </div>
   );
