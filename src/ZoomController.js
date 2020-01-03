@@ -57,7 +57,7 @@ const PerfectZoomController = ({ match, zoomState, setZoomState }) => {
         <br />
         <h4 className="inline-block">Placement: &nbsp;</h4>
         <select
-          value={zoomState.placement || match.small ? 'top' : 'right'}
+          value={zoomState.placement || (match.small ? 'top' : 'right')}
           onChange={setPlacement}
         >
           <option value="top">top</option>
