@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-perfect-zoom-playground/static/css/main.80ac0dd4.chunk.css",
-    "main.js": "/react-perfect-zoom-playground/static/js/main.78eb7016.chunk.js",
-    "main.js.map": "/react-perfect-zoom-playground/static/js/main.78eb7016.chunk.js.map",
+    "main.js": "/react-perfect-zoom-playground/static/js/main.f8ae428c.chunk.js",
+    "main.js.map": "/react-perfect-zoom-playground/static/js/main.f8ae428c.chunk.js.map",
     "runtime-main.js": "/react-perfect-zoom-playground/static/js/runtime-main.aad62880.js",
     "runtime-main.js.map": "/react-perfect-zoom-playground/static/js/runtime-main.aad62880.js.map",
     "static/css/2.9904688b.chunk.css": "/react-perfect-zoom-playground/static/css/2.9904688b.chunk.css",
     "static/js/2.55501803.chunk.js": "/react-perfect-zoom-playground/static/js/2.55501803.chunk.js",
     "static/js/2.55501803.chunk.js.map": "/react-perfect-zoom-playground/static/js/2.55501803.chunk.js.map",
     "index.html": "/react-perfect-zoom-playground/index.html",
-    "precache-manifest.9a74dd7a11433abc67404e184edd01d1.js": "/react-perfect-zoom-playground/precache-manifest.9a74dd7a11433abc67404e184edd01d1.js",
+    "precache-manifest.32f7061cce9d3685049966717365dc9d.js": "/react-perfect-zoom-playground/precache-manifest.32f7061cce9d3685049966717365dc9d.js",
     "service-worker.js": "/react-perfect-zoom-playground/service-worker.js",
     "static/css/2.9904688b.chunk.css.map": "/react-perfect-zoom-playground/static/css/2.9904688b.chunk.css.map",
     "static/css/main.80ac0dd4.chunk.css.map": "/react-perfect-zoom-playground/static/css/main.80ac0dd4.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.9904688b.chunk.css",
     "static/js/2.55501803.chunk.js",
     "static/css/main.80ac0dd4.chunk.css",
-    "static/js/main.78eb7016.chunk.js"
+    "static/js/main.f8ae428c.chunk.js"
   ]
 }
