@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/react-perfect-zoom-playground/static/css/main.80ac0dd4.chunk.css",
-    "main.js": "/react-perfect-zoom-playground/static/js/main.2bad66b0.chunk.js",
-    "main.js.map": "/react-perfect-zoom-playground/static/js/main.2bad66b0.chunk.js.map",
+    "main.js": "/react-perfect-zoom-playground/static/js/main.4c46fd6f.chunk.js",
+    "main.js.map": "/react-perfect-zoom-playground/static/js/main.4c46fd6f.chunk.js.map",
     "runtime-main.js": "/react-perfect-zoom-playground/static/js/runtime-main.aad62880.js",
     "runtime-main.js.map": "/react-perfect-zoom-playground/static/js/runtime-main.aad62880.js.map",
     "static/css/2.906d25c0.chunk.css": "/react-perfect-zoom-playground/static/css/2.906d25c0.chunk.css",
-    "static/js/2.f6a553aa.chunk.js": "/react-perfect-zoom-playground/static/js/2.f6a553aa.chunk.js",
-    "static/js/2.f6a553aa.chunk.js.map": "/react-perfect-zoom-playground/static/js/2.f6a553aa.chunk.js.map",
+    "static/js/2.52868511.chunk.js": "/react-perfect-zoom-playground/static/js/2.52868511.chunk.js",
+    "static/js/2.52868511.chunk.js.map": "/react-perfect-zoom-playground/static/js/2.52868511.chunk.js.map",
     "index.html": "/react-perfect-zoom-playground/index.html",
-    "precache-manifest.fb947bc88610951b539919a583876209.js": "/react-perfect-zoom-playground/precache-manifest.fb947bc88610951b539919a583876209.js",
+    "precache-manifest.5fc523d2a68191eefcaf91d764cff681.js": "/react-perfect-zoom-playground/precache-manifest.5fc523d2a68191eefcaf91d764cff681.js",
     "service-worker.js": "/react-perfect-zoom-playground/service-worker.js",
     "static/css/2.906d25c0.chunk.css.map": "/react-perfect-zoom-playground/static/css/2.906d25c0.chunk.css.map",
     "static/css/main.80ac0dd4.chunk.css.map": "/react-perfect-zoom-playground/static/css/main.80ac0dd4.chunk.css.map",
-    "static/js/2.f6a553aa.chunk.js.LICENSE": "/react-perfect-zoom-playground/static/js/2.f6a553aa.chunk.js.LICENSE",
+    "static/js/2.52868511.chunk.js.LICENSE": "/react-perfect-zoom-playground/static/js/2.52868511.chunk.js.LICENSE",
     "static/media/logo.svg": "/react-perfect-zoom-playground/static/media/logo.5d5d9eef.svg",
     "static/media/sample2.jpg": "/react-perfect-zoom-playground/static/media/sample2.05cb93df.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.aad62880.js",
     "static/css/2.906d25c0.chunk.css",
-    "static/js/2.f6a553aa.chunk.js",
+    "static/js/2.52868511.chunk.js",
     "static/css/main.80ac0dd4.chunk.css",
-    "static/js/main.2bad66b0.chunk.js"
+    "static/js/main.4c46fd6f.chunk.js"
   ]
 }

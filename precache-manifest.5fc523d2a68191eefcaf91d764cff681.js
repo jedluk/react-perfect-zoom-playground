@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e52ff83eb39d2d0d9c470edc0c734316",
+    "revision": "6513c4dc5c128a106bd9531e97cf0fa4",
     "url": "/react-perfect-zoom-playground/index.html"
   },
   {
-    "revision": "dea846d1a7a38b9f21d2",
+    "revision": "c428344584f1c4baf660",
     "url": "/react-perfect-zoom-playground/static/css/2.906d25c0.chunk.css"
   },
   {
-    "revision": "0ca915611aec03227298",
+    "revision": "03e14a729624bb0ee38f",
     "url": "/react-perfect-zoom-playground/static/css/main.80ac0dd4.chunk.css"
   },
   {
-    "revision": "dea846d1a7a38b9f21d2",
-    "url": "/react-perfect-zoom-playground/static/js/2.f6a553aa.chunk.js"
+    "revision": "c428344584f1c4baf660",
+    "url": "/react-perfect-zoom-playground/static/js/2.52868511.chunk.js"
   },
   {
     "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/react-perfect-zoom-playground/static/js/2.f6a553aa.chunk.js.LICENSE"
+    "url": "/react-perfect-zoom-playground/static/js/2.52868511.chunk.js.LICENSE"
   },
   {
-    "revision": "0ca915611aec03227298",
-    "url": "/react-perfect-zoom-playground/static/js/main.2bad66b0.chunk.js"
+    "revision": "03e14a729624bb0ee38f",
+    "url": "/react-perfect-zoom-playground/static/js/main.4c46fd6f.chunk.js"
   },
   {
     "revision": "71524eb36824471244af",
