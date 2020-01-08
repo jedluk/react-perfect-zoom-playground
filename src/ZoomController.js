@@ -29,6 +29,9 @@ const PerfectZoomController = ({ match, zoomState, setZoomState }) => {
       }
     });
   }
+  function setAlignment(e) {
+    setZoomState({ ...zoomState, align: e.target.value });
+  }
   function setPlacement(e) {
     setZoomState({ ...zoomState, placement: e.target.value });
   }
@@ -66,11 +69,22 @@ const PerfectZoomController = ({ match, zoomState, setZoomState }) => {
           <option value="left">left</option>
         </select>
         <br />
+        <h4 className="inline-block">Alignment: &nbsp;</h4>
+        <select value={zoomState.align} onChange={setAlignment}>
+          <option value="start">start</option>
+          <option value="center">center</option>
+          <option value="end">end</option>
+        </select>
         <br />
         <h4 className="inline-block" style={{ color: zoomState.color }}>
           Rectangle border: {zoomState.color}
           &nbsp;
-          <input type="color" value={zoomState.rectangleStyles.color} onChange={setColor} />
+          <input
+            type="color"
+            value={zoomState.rectangleStyles.color}
+            style={{ marginTop: 3 }}
+            onChange={setColor}
+          />
         </h4>
       </div>
       <div className="header-logo">

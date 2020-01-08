@@ -4,7 +4,10 @@ import PerfectZoom from 'react-perfect-zoom';
 import Paragraph from './Paragraph';
 import sample from './assets/sample2.jpg';
 
-const Page = ({ match, perfectZoomState: { placement, rectangleStyles, margin, translate } }) => {
+const Page = ({
+  match,
+  perfectZoomState: { align, placement, rectangleStyles, margin, translate }
+}) => {
   const [flexDirection, setFlexDirection] = useState('row');
   return (
     <Fragment>
@@ -12,6 +15,7 @@ const Page = ({ match, perfectZoomState: { placement, rectangleStyles, margin, t
         {('center' === flexDirection || match.small) && <Paragraph />}
         <PerfectZoom
           allowDownload
+          align={align}
           placement={placement || (match.small ? 'top' : 'right')}
           source={sample}
           thumbnailSize={match.small ? [150, 250] : match.medium ? [200, 333] : [300, 500]}

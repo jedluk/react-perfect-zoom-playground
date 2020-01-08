@@ -6,6 +6,7 @@ import Page from './Page';
 function App() {
   const [zoomState, setZoomState] = useState({
     placement: '',
+    align: 'center',
     rectangleStyles: {
       color: '#61dafb',
       size: 2

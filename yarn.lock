@@ -5898,11 +5898,6 @@ jest@24.9.0:
     import-local "^2.0.0"
     jest-cli "^24.9.0"
 
-js-image-zoom@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/js-image-zoom/-/js-image-zoom-0.7.0.tgz#9cea6e7a4da1feae99e7433dc58fdc31f05a977f"
-  integrity sha512-csvn2FmRLjVz5O9AtXGRPKy0Khfcf5n2Vuyg1NyOVylcjzJ6IKN60JmZ/d5rVQvMya9V6tqAaCqj/c20PlUYpQ==
-
 js-levenshtein@^1.1.3:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/js-levenshtein/-/js-levenshtein-1.1.6.tgz#c6cee58eb3550372df8deb85fad5ce66ce01d59d"
@@ -8378,14 +8373,6 @@ react-error-overlay@^6.0.4:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.4.tgz#0d165d6d27488e660bc08e57bdabaad741366f7a"
   integrity sha512-ueZzLmHltszTshDMwyfELDq8zOA803wQ1ZuzCccXa1m57k1PxSHfflPD5W9YIiTXLs0JTLzoj6o1LuM5N6zzNA==
 
-react-image-zoom@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-image-zoom/-/react-image-zoom-1.1.0.tgz#1d66e124b153e7cafe4d428ac49a254319a1f8f7"
-  integrity sha512-6Xz+hnPnDoafwod8PdqT3wWlGbiCQi6nf9kqQMirgSFiuyOZ3yjwiGZDsFxvU/pGJSHZgRhxuoHdYyiJkEiLPA==
-  dependencies:
-    js-image-zoom "^0.7.0"
-    prop-types "^15.7.2"
-
 react-is@^16.8.1, react-is@^16.8.4:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
@@ -8401,10 +8388,10 @@ react-media@^1.10.0:
     json2mq "^0.2.0"
     prop-types "^15.5.10"
 
-react-perfect-zoom@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/react-perfect-zoom/-/react-perfect-zoom-0.4.0.tgz#fdfad087fddef3c8df5620864d67b73f7cbf1314"
-  integrity sha512-kvzr1svlwh5gfU0xB+ZNu7QeFP8TiJxTl4tCvAv1u8Gk1OC7UWIj7De/XxKhep3uRG1mCYF7IRV1YSS7g/dAbw==
+react-perfect-zoom@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/react-perfect-zoom/-/react-perfect-zoom-0.5.1.tgz#d5c104795a993e9d7c07c030ffdb77bc6c89e7f6"
+  integrity sha512-CD3AV+rTQ8cTqwH6jaPTg5CNXVz+NXbr8KcDT6m9hO+lVSFZnHdKjRCgSUIPxPwUVgmgq8F87I20ULbTegYgrA==
 
 react-scripts@^3.3.0:
   version "3.3.0"
