@@ -7,12 +7,14 @@ import App from './App';
 import Demo from './Demo';
 import Navigation from './Navigation';
 
+const { PUBLIC_URL = '' } = process.env;
+
 const routing = (
   <Router>
     <div className="App">
       <Navigation />
-      <Route exact path="/" component={App} />
-      <Route exact path="/demo" component={Demo} />
+      <Route exact path={`${PUBLIC_URL}/`} component={App} />
+      <Route exact path={`${PUBLIC_URL}/demo`} component={Demo} />
     </div>
   </Router>
 );
