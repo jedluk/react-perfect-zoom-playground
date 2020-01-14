@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 const getPos = current => {
@@ -13,9 +14,9 @@ const FlexController = ({ flexDirection, setFlexDirection }) => {
     setFlexDirection(getPos(flexDirection));
   }
   return (
-    <button onClick={setDirection} className="flex-button">
-      <span>{flexDirection || 'change flex direction'}</span>
-    </button>
+    <a className="the-button" href="#" onClick={setDirection} style={{ fontSize: '.7rem' }}>
+      {flexDirection || 'change flex direction'}
+    </a>
   );
 };
 export default FlexController;

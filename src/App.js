@@ -18,26 +18,20 @@ function App() {
     margin: 20
   });
   return (
-    <div className="App">
-      <Media
-        queries={{
-          small: '(max-width: 859px)',
-          medium: '(min-width: 860px) and (max-width: 1199px)',
-          large: '(min-width: 1200px)'
-        }}
-      >
-        {match => (
-          <Fragment>
-            <PerfectZoomController
-              match={match}
-              zoomState={zoomState}
-              setZoomState={setZoomState}
-            />
-            <Page match={match} perfectZoomState={zoomState} />
-          </Fragment>
-        )}
-      </Media>
-    </div>
+    <Media
+      queries={{
+        small: '(max-width: 859px)',
+        medium: '(min-width: 860px) and (max-width: 1199px)',
+        large: '(min-width: 1200px)'
+      }}
+    >
+      {match => (
+        <Fragment>
+          <PerfectZoomController match={match} zoomState={zoomState} setZoomState={setZoomState} />
+          <Page match={match} perfectZoomState={zoomState} />
+        </Fragment>
+      )}
+    </Media>
   );
 }
 
