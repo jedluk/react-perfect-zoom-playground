@@ -8434,9 +8434,9 @@ react-media@^1.10.0:
     prop-types "^15.5.10"
 
 react-perfect-zoom@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-perfect-zoom/-/react-perfect-zoom-1.0.0.tgz#320042b023b0e47e661274745fc88d6247ba9d08"
-  integrity sha512-zxMcpVDjkcGd6FLplOBwvHdJoQLcCKBmFpdgv9sVK2Inco0jZLaSRzkfPUOGM6qPQTR9B0x8Z9yVykwR6dsBdg==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-perfect-zoom/-/react-perfect-zoom-1.1.0.tgz#6a60d288959db4ad0c744023cc586c07314122f0"
+  integrity sha512-kFEWZ+PC5xP4HsSu7eyJff64GQ7O5Ca5VGcV27vXXZCSjlrVub4OnEWsRxZHnrWocOq3MK0XSnc8vyzWhDw1qg==
 
 react-router-dom@^5.1.2:
   version "5.1.2"

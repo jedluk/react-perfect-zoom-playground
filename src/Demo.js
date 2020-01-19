@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Paragraph from './Paragraph';
 import PerfectZoom from 'react-perfect-zoom';
+import Loader from './Loader';
 import Media from 'react-media';
 import smallCookie from './assets/cookie_small.jpg';
 import largeCookie from './assets/cookie_large.jpg';
@@ -29,6 +30,7 @@ export default function Demo(props) {
                 ...source,
                 thumbnailSize: match.small ? [150, 250] : match.medium ? [250, 416] : [300, 500]
               }}
+              loader={Loader}
               placement={match.large ? 'right' : 'bottom'}
               align={match.large ? 'start' : 'center'}
               rectangleStyles={{ color: '#fff', size: 3 }}
